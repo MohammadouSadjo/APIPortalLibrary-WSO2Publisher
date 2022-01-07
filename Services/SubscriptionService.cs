@@ -12,7 +12,7 @@ namespace APIPortalLibraryPublisher.Services
 {
     public class SubscriptionService
     {
-        public static async Task<ApiResponse<AllSubscriptions>> AllSubscriptions(string apiId, int limit = 25, int offset = 0)//Get list of all subscription of an api
+        public static async Task<ApiResponse<AllSubscriptions>> AllSubscriptions(string apiId, int limit = 25, int offset = 0)//Get list of all subscription of an API
         {
             //Bypass SSL Certificate
             HttpClientHandler clientHandler = new HttpClientHandler();
